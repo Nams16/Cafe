@@ -1,0 +1,41 @@
+<html>
+    <head>
+         
+           <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+           <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Cloud Cafe</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form"></form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyB4MWV0dQS_t6cVTYLtDZ_bXYEfNE3olMk",
+    authDomain: "ninja-firestore-tut-f6e7a.firebaseapp.com",
+    projectId: "ninja-firestore-tut-f6e7a",
+    storageBucket: "ninja-firestore-tut-f6e7a.appspot.com",
+    messagingSenderId: "700424703328",
+    appId: "1:700424703328:web:48d13448913612e1e2a205",
+    measurementId: "G-GXT8D7RV5N"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ const db = firebase.firestore();
+ db.settings({
+     timestampsInSnapshots: true
+ });
+</script>
+            
+        <script src="app.js"></script>
+    </body>
+</html>
